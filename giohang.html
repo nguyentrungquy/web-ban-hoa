@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Giỏ hàng</title>
+
+	<link rel="stylesheet" type="text/css" href="theme/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="theme/css/font-awesome.css">
+	<link href="theme/css/animate.css" type="text/css" rel="stylesheet" />
+	<link href="theme/css/nivo-slider.css" type="text/css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="theme/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="theme/css/slick-theme.css">
+
+	<link href="theme/zoom/cloudzoom.css" type="text/css" rel="stylesheet" />
+	<link href="theme/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet" />
+	<link href="theme/fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="theme/css/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="theme/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="theme/scss/style.css">
+    
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row row-ibl mid">
+            <button class="menu-btn nav-open hidden-lg hidden-md" type="button">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="logo">
+                    <a href="#" title="">
+                        <img src="theme/images/logo.png" class="img-responsive" title="" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="main-bar">
+                    <nav class="main-nav">
+                        <form class="search-mobile">
+                            <input type="text" name="" placeholder="Tim kiem .... " >
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        <ul>
+                            <li><a href="#" class="smooth" title="">trang chủ</a></li>
+                            <li><a href="#" class="smooth" title="">giới thiệu</a>
+                                <ul>
+                                    <li><a href="#" class="smooth" title="">trang chủ</a></li>
+                                    <li><a href="#" class="smooth" title="">giới thiệu</a></li>
+                                    <li><a href="#" class="smooth" title="">cửa hàng</a></li>
+                                    <li><a href="#" class="smooth" title="">tin tức</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="smooth" title="">cửa hàng</a></li>
+                            <li><a href="#" class="smooth" title="">tin tức</a></li>
+                            <li><a href="#" class="smooth" title="">liên hệ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <button type="button" data-show="#search"><i  class="fa fa-search"></i></button>
+                        <div class="ct" id="search">
+                            <form>
+                                <input type="text" name="" placeholder="Tim kiem .... " >
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <a href="#" title="">
+                            <img src="theme/images/icon-cart.png" title="" alt="">
+                        </a>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="banner">
+    <img src="theme/images/bg-tin.jpg" class="img-responsive" title="" alt="">
+    <div class="caption">
+        <h1 class="title">Thế giới hoa</h1>
+        <p class="s-content">Giữa những điều tươi đẹp trên thế gian. Hồng lộng lẫy nhất nhưng lại chóng tàn. Quý giá hơn những đóa hoa tạc khắc. Bởi dù ngắn ngủi, hương sắc nồng nàn...</p>
+    </div>
+</div>
+<div class="main">
+    <div class="bg-breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                       <span>Trang chủ</span>
+                    </a>
+                    <span class="label"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                        <span itemprop="name">Cửa hàng</span>
+                    </a>
+                    <span class="label"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    <meta itemprop="position" content="2">
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="#">
+                        <span itemprop="name">Đặt hàng</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>
+
+
+            </ul> 
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="title-cart">Giỏ hàng <span>( 1 sản phẩm )</span></h3>
+        <div class="table-responsive">
+            <table class="table table-cart" width="100%" cellspacing="1" cellpadding="0" border="0" bgcolor="#dedede">
+                <tbody>
+                    <tr>
+                        <td class="text-left">Sản phẩm</td>
+                        <td>Giá</td>
+                        <td>Số lượng</td>
+                        <td>Thành tiền</td>
+                        <td class="bg-hong">Thanh toán</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <img src="theme/images/img-cart.jpg" class="img-responsive" title="" alt="">
+                            <span class="name">Bó hoa hồng chúc mừng</span>
+                        </td>
+                        <td>790.000VNĐ</td>
+                        <td>
+                            <form class="update">
+                                <input type="text" name="" class="input-number" value="1">
+                                <span class="plus">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </span>
+                                <span class="minus">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </span>        
+                            </form>
+                        </td>
+                        <td>790.000VNĐ</td>
+                        <td>
+                            <div class="money">
+                                <div class="item v1 clearfix">
+                                    <span class="pull-left">Tạm tính:</span>
+                                    <span class="pull-right">790.000VNĐ</span>
+                                </div>
+                                <div class="item clearfix">
+                                    <span class="pull-left">Thành tiền:</span>
+                                    <span class="total pull-right">790.000VNĐ <br><i>(Đã bao gồm thuế VAT)</i></span>
+                                    <br>
+                                    <!-- <div class="clearfix"></div>
+                                    <p class="text-right">(Đã bao gồm thuế VAT)</p> -->
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="buy clearfix">
+            <a href="#" class="delete" title="">Xóa</a>|<a href="#" title="" class="after">Để mua sau</a>
+            <a href="#" class="btn">Tiến hành  thanh toán</a>
+            <br>
+            <a href="#" class="btn v1">Tiếp tục mua hàng</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="address">
+    <div class="container-fluid pad-0">
+        <div class="row row-ibl mid col-mar-0">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="add-left text-center">
+                    <div class="container">
+                        <div class="row row-ibl mid col-mar-0">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="caption v1">
+                                    <h4 class="title">location</h4>
+                                    <p>Tầng 3, số 10, ngõ 800A, Nghĩa Đô, Cầu Giấy, Hà Nội</p>
+                                </div>
+                            </div>   
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="caption">
+                                    <h4 class="title">Giờ làm việc</h4>
+                                    <p>Thứ Hai - Thứ Sáu 07:00 - 19:00</p>
+                                    <p>Thứ 7 - Mặt trời 09:00 - 14:00</p>
+                                </div>
+                            </div>   
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="caption v2">
+                                    <h4 class="title">Kết nối với chúng tôi</h4>
+                                    <div class="link">
+                                        <a href="#" title=""><i class="fa fa-facebook"></i></a>
+                                        <a href="#" title=""><i class="fa fa-google"></i></a>
+                                        <a href="#" title=""><i class="fa fa-youtube"></i></a>
+                                        <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>   
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="map">
+                    <iframe width="100%" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=105.80216199159624%2C21.02755668512086%2C105.80421656370166%2C21.028986231149457&amp;layer=mapnik" style=""></iframe>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3 class="f-title">Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Liên hệ với chúng tôi</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Tư vấn chọn mẫu</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Trung tâm hỗ trợ</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Chính sách bảo mật</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Hính thức thanh toán</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Hỗ trợ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3 class="f-title">Mẫu thiết kế</h3>
+                    <ul>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Web doanh nghiệp</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Web bán hàng</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Landing Page</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3 class="f-title">Tất cả ngành nghề</h3>
+                    <ul>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Thiết bị công nghiệp</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Thời trang </a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Trang sức</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Thể thao - dịch vụ</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Bất động sản</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Thủ công mỹ nghệ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="item">
+                    <h3 class="f-title">Kiểu giao diện</h3>
+                    <ul>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Giới thiệu dịch vụ</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Giới thiệu sản phẩm</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Bán hàng - Tin tức</a></li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i><a href="#" title="" class="smooth">Landing Page</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+<script  src="theme/js/jquery-2.2.1.min.js" defer=""></script>
+<script  src="theme/js/bootstrap.min.js" defer=""></script>
+<script  src="theme/js/slick.js" defer=""></script>
+<script src="theme/js/wow.js" defer></script>
+<script  src="theme/js/slick.min.js" defer=""></script>
+<script  src="theme/js/script.js" defer=""></script>
+
+</body>
+</htmli
